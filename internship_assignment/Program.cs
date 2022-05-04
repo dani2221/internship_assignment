@@ -22,7 +22,8 @@ void AnalogueClockProblem()
     // similar for minutes
     float angleMinutes = (float) minutes / 60 * 360;
 
-    Console.WriteLine($"Lesser angle between hours and minutes is {Math.Abs(angleHours - angleMinutes)}");
+    float relativeAngle = Math.Abs(angleHours - angleMinutes);
+    Console.WriteLine($"Lesser angle between hours and minutes is {Math.Min(relativeAngle,360-relativeAngle)}");
 }
 
 // second and third problem

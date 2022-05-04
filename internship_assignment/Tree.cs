@@ -8,7 +8,7 @@ namespace internship_assignment
 {
     public class Tree
     {
-        internal class Branch
+        private class Branch
         {
             public List<Branch> Children { get; set; } = new List<Branch>();
         }
